@@ -1,0 +1,52 @@
+<div class="page-header">
+	<h1>Appointments</h1>
+</div>
+<div ng-controller="appointmentController as vm">
+    <div class="container table-hover">
+        <div>
+            First Name
+        </div>
+        <div>
+            <input style="width: 300px" ng-model="vm.appointment.firstName" ng-trim="false" maxlength="15" />
+        </div>
+        <br />
+        <div>
+            Last Name:
+        </div>
+        <div>
+            <input style="width: 300px" ng-model="vm.appointment.lastName" ng-trim="false" maxlength="15" />
+        </div>
+        <br />
+        <div>
+            Email:
+        </div>
+        <div>
+            <input style="width: 300px" ng-model="vm.appointment.email" ng-trim="false" maxlength="15" />
+        </div>
+        <br />
+        <div>
+            Reason:
+        </div>
+        <div>
+            <select ng-options="option.reason for option in vm.reasons track by option.reason" ng-model="vm.appointment.reasonObject"></select>
+        </div>
+        <br />
+        <div>
+            Appointment Date:
+        </div>
+        <div>
+            <input type="date" name="appointmentDate" id="appointmentDate" ng-model="vm.appointment.appointmentDate">
+        </div>
+        <br />
+        <div>
+            Time Bracket:
+        </div>
+        <div>
+            <select ng-options="option.timeBracket for option in vm.timeBrackets track by option.timeBracket" ng-model="vm.appointment.timeBracketObject"></select>
+        </div>
+        <br />
+        <div>
+            <button class="btn btn-primary" ng-click="vm.addAppointment()">Create</button>
+        </div>
+    </div>
+</div>

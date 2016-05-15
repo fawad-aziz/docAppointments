@@ -1,0 +1,195 @@
+.page-header {
+	text-align: center;
+	font-size: x-large;
+}
+
+.duMain {
+	background-color: #D5DCE8;
+	padding: 12px;
+	color: #051938;
+}
+
+.duGrouping {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 2px;
+}
+.panel-default > .panel-heading {
+	color: white;
+	background-color: #152D54;
+	border-color: #051938;
+}
+
+.dialogGroup {
+	padding-top:12px;
+}
+
+.dialogField {
+	padding-top: 4px;
+	min-height: 32px
+}
+
+.serverName {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.spinner {
+	width: 12px;
+	height: 12px;
+}
+
+.displayInline {
+	display:inline;
+}
+
+.multiselect {
+	max-width:1000px;
+	max-height:150px;
+	overflow:auto;
+	display: inline-table;
+}
+ 
+.multiselect label {
+	display:block;
+}
+ 
+.multiselect-on {
+	color:#ffffff;
+	background-color:#000099;
+}
+
+.border {
+	border-radius: 25px;
+	border: 2px solid #73AD21;
+	padding: 20px;
+
+}
+.left{
+	display:table-cell;
+	height:100%;
+	vertical-align: middle;
+	padding: 10px;
+}
+.right{
+	display:table-cell;
+	padding: 10px;
+}
+
+.labButton {
+	font-size: 13pt; 
+	padding-top: 5px; 
+	padding-right: 8px
+}
+
+.fileUpload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.logModalDialog
+{
+    width: 80%;
+}
+
+.logModalBody {
+	max-height: calc(100vh - 200px);
+	overflow-y: auto;
+	white-space: pre
+}
+
+.labDetailsDialog
+{
+    width: 40%;
+}
+
+.labDetailsBody {
+	max-height: calc(100vh - 200px);
+	overflow-y: auto;
+}
+
+.detailsField {
+	width: 100px;
+	display: inline-block;
+	float: left;
+}
+
+.detailsInfoField {
+	margin-left: 100px;
+}
+
+.centerHorizontally {
+	text-align: center;
+}
+
+/* Required because of a known issue in normalize.less regarding disabled elements */
+button[disabled] {
+	color: GrayText
+}
+
+.custom-file-input::before {
+	content: 'Load Saved Configuration...';
+	display: inline-block;
+	border: 2px outset buttonface;
+	background-color: ButtonFace;
+	padding-bottom: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 1px;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 14px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	-webkit-appearance: button;
+}
+
+.custom-file-input:active::before {
+	background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+	box-sizing: border-box;
+}
+
+a.button {
+	text-decoration: none;
+	color: inherit
+}
+
+.customization-well {
+	margin-bottom: 2px;
+}
+
+.icon-color {
+	color: #152D54
+}
+
+.lu-grid {
+	background-color: #f0f0f0;
+}
+.lu-grid:nth-child(2n+1) {
+	background-color: #D1D1D1;
+}
+
+
+.btn-file {
+		position: relative;
+		overflow: hidden;
+}
+.btn-file input[type=file] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 100%;
+		min-height: 100%;
+		font-size: 100px;
+		text-align: right;
+		filter: alpha(opacity=0);
+		opacity: 0;
+		outline: none;
+		background: white;
+		cursor: inherit;
+		display: block;
+}
