@@ -113,7 +113,6 @@
 .detailsField {
 	width: 100px;
 	display: inline-block;
-	float: left;
 }
 
 .detailsInfoField {
@@ -192,4 +191,70 @@ a.button {
 		background: white;
 		cursor: inherit;
 		display: block;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 550px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+	padding-top: 20px;
+	/*background-color: #f1f1f1;*/
+	height: 100%;
+}
+
+.mainnav {
+	height: inherit;
+	background-color: #fff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.appointment {
+	height: 445px;
+	overflow-y:scroll;	
+}
+
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #222;
+	color: white;
+	/*padding: 15px;*/
+	vertical-align: middle;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+	height: auto;
+	padding: 15px;
+}
+.row.content {height:auto;} 
+}
+
+input:required {
+    background:hsl(180, 50%, 90%);
+    border:1px solid #999;
+}
+
+input:optional {
+    background:hsl(300, 50%, 90%);
+    border:1px dotted hsl(180, 50%, 90%);
+}
+
+input:valid,
+input:in-range {
+    background:hsl(120, 50%, 90%);
+    border-color:hsl(120, 50%, 50%);
+}
+
+input:invalid,
+input:out-of-range {
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 90%);
 }

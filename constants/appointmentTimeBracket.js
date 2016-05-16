@@ -2,7 +2,7 @@
     'use restrict';
     
     angular.module('docApp')
-        .constant('docApp.constants.appointmentTimeBracket'[
+        .constant('docApp.constants.appointmentTimeBracket', [
             { "id": 1, "timeBracket": "7AM - 9AM" },
             { "id": 2, "timeBracket": "9AM - 11AM" },
             { "id": 3, "timeBracket": "11AM - 12PM" },
