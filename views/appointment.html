@@ -1,4 +1,4 @@
-<div ng-controller="appointmentController as vm">
+<div ng-controller="appointmentController as vm" class="appointment">
     <br />
     <p>Please complete the form. We will contact you to finalize the appointment.</p>
     <div>
@@ -12,42 +12,61 @@
         Last Name:
     </div>
     <div>
-        <input style="width: 300px" ng-model="vm.appointment.lastName" placeholder="Last Name" required ng-trim="false" maxlength="50" />
+        <input id="lastName" style="width: 300px" ng-model="vm.appointment.lastName" placeholder="Last Name" required ng-trim="false" maxlength="50" />
     </div>
     <br />
     <div>
         Email:
     </div>
     <div>
-        <input style="width: 300px" ng-model="vm.appointment.email" placeholder="Email" required email ng-trim="false" maxlength="50" />
+        <input id="contactEmail" style="width: 300px" ng-model="vm.appointment.email" placeholder="Email" required email ng-trim="false" maxlength="50" />
+    </div>
+    <br />
+    <div>
+        Contact Number:
+    </div>
+    <div>
+        <input id="contactNumber" style="width: 300px" ng-model="vm.appointment.contactNumber" placeholder="Contact Number" required type="tel" ng-trim="false" maxlength="50" />
     </div>
     <br />
     <div>
         Reason:
     </div>
     <div>
-        <select ng-options="option.reason for option in vm.reasons track by option.reason" ng-model="vm.appointment.reasonObject" required></select>
+        <select id="appointmentReason" ng-options="option.reason for option in vm.reasons track by option.reason" ng-model="vm.appointment.reasonObject" required></select>
     </div>
     <br />
     <div>
         Appointment Date:
     </div>
     <div>
-        <input type="date" name="appointmentDate" id="appointmentDate" required ng-model="vm.appointment.appointmentDate">
+        <input id="appointmentDate" type="date" name="appointmentDate" id="appointmentDate" required ng-model="vm.appointment.appointmentDate">
     </div>
     <br />
     <div>
         Time Bracket:
     </div>
     <div>
-        <select ng-options="option.timeBracket for option in vm.timeBrackets track by option.timeBracket" ng-model="vm.appointment.timeBracketObject"></select>
+        <select id="timeBracket" ng-options="option.timeBracket for option in vm.timeBrackets track by option.timeBracket" required ng-model="vm.appointment.timeBracketObject"></select>
     </div>
     <br />
     <div>
         Gender:
     </div>
     <div>
-        <select ng-options="option.gender for option in vm.genders track by option.gender" ng-model="vm.appointment.genderObject"></select>
+        <select id="gender" ng-options="option.gender for option in vm.genders track by option.gender" ng-model="vm.appointment.genderObject"></select>
+    </div>
+    <br />
+    <div>
+        Established patient?
+        <input id="establishedPatient" type="checkbox" ng-model="vm.appointment.establishedPatient">
+    </div>
+    <br />
+    <div>
+        How will you pay?
+    </div>
+    <div>
+        <select id="paymentOption" ng-options="option.option for option in vm.insuranceOptions track by option.option" ng-model="vm.appointment.insuranceOptionObject"></select>
     </div>
     <br />
     <div>

@@ -21,6 +21,10 @@
             { "id": 2, "gender": "Female" },
             { "id": 3, "gender": "Not Specified" }
         ];
+        vm.insuranceOptions = [
+            { "id": 1, "option": "Self pay" },
+            { "id": 2, "option": "Use insurance" }
+        ];
         
         function init() {
             
@@ -30,6 +34,7 @@
             vm.appointment.reason = vm.appointment.reasonObject.reason;
             vm.appointment.appointmentTime = vm.appointment.timeBracketObject.timeBracket;
             vm.appointment.gender = vm.appointment.genderObject.gender;
+            vm.appointment.insuranceOption = vm.appointment.insuranceOptionObject.option;
             sharedService.callPostUrl(appHostUrl + appointmentUrl, vm.appointment,
                 function () {
                     BootstrapDialog.show({
