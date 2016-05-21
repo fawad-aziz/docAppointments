@@ -11,7 +11,7 @@
     
     function appointmentController(sharedService, appointmentReason, appointmentTimeBracket) {
         var vm = this;
-        var appHostUrl = "http://10.27.145.59:5000/";
+        var appHostUrl = "http://172.245.56.21:5000/";
         var appointmentUrl = "api/appointment";
         vm.appointment = {};
         vm.reasons = appointmentReason;
