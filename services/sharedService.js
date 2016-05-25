@@ -1,12 +1,12 @@
 (function () {
     'use strict';
-    
+
     angular
         .module('docApp')
         .service('docApp.services.sharedService', sharedService);
 
     sharedService.inject = ['$http'];
-    
+
     function sharedService($http) {
         this.defaultErrorHandler = function defaultErrorHandler(response, customMessage) {
 			if (typeof customMessage === 'undefined') {
@@ -19,7 +19,7 @@
 				BootstrapDialog.alert(customMessage + ": " + response.status + ": " +response.statusText);
 			}
 		};
-        
+
         this.callGetUrl = function callGetUrl(url, successHandler, errorHandler) {
 			if (typeof errorHandler === 'undefined') {
 				errorHandler = this.defaultErrorHandler;

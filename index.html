@@ -8,6 +8,7 @@
 		<link href="styles/bootstrap-dialog.css" rel="stylesheet" />
 		<link rel="stylesheet" href="styles/style.css"/>
 		<link rel="stylesheet" href="styles/font-awesome.min.css"/>
+		<link rel="stylesheet" href="node_modules/angular-ui-grid/ui-grid.min.css"/>
 
 		<script src="scripts/jquery-2.1.4.min.js"></script>
 		<script src="scripts/bootstrap.js"></script>
@@ -17,7 +18,8 @@
 		<script src="scripts/angular-route.js"></script>
 		<script src="scripts/lodash.js"></script>
 		<script src="scripts/moment.js"></script>
-		<script src="scripts/angular-ui/ui-bootstrap-tpls.js"></script>    
+		<script src="scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+		<script src="node_modules/angular-ui-grid/ui-grid.js"></script>
 
 		<script src="app.js"></script>
 		
@@ -25,7 +27,9 @@
 		<script src="constants/appointmentTimeBracket.js"></script>
 		
 		<script src="services/sharedService.js"></script>
+		
 		<script src="controllers/appointment.js"></script>
+		<script src="controllers/admin/appointmentList.js"></script>
 	</head>
 	<body class="container duMain">
 		<nav class="navbar navbar-inverse">
@@ -43,6 +47,7 @@
 					<li><a style="color:#fff;" href="#/">Home</a></li>
 					<li><a style="color:#fff;" href="#/appointments">Appointments</a></li>
 					<li><a style="color:#fff;" href="#/contactus">Contact</a></li>
+					<li><a style="color:#fff;" href="#/admin">Admin</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><!--<a href=""><span class="glyphicon glyphicon-log-in"></span></a>--></li>

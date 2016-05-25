@@ -1,5 +1,5 @@
 var app = angular.module('docApp', [
-	'ngRoute', 'ngAnimate', 'ui.bootstrap'
+	'ngRoute', 'ngAnimate', 'ui.bootstrap', 'ui.grid'
 ]);
 
 app
@@ -15,6 +15,9 @@ app
 				}).
 				when('/appointments', {
 					templateUrl: 'views/appointment.html'
+				}).
+				when('/admin', {
+					templateUrl: 'views/admin/appointmentList.html'
 				});
 		}
 	]);
